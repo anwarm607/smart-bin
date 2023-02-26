@@ -1,12 +1,17 @@
 import { Button, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const signIn = () => {
+    navigate("/home");
+  };
   return (
     <Container>
       <Grid
         alignContent="space-between"
-        height="100vh"
+        minHeight="100vh"
         justifyContent="space-between"
         display="flex"
         flexDirection="column"
@@ -23,7 +28,9 @@ const Login = () => {
         </div>
 
         <div>
-          <Button variant="outlined">Sign in with Google</Button>
+          <Button variant="outlined" onClick={() => signIn()}>
+            Sign in with Google
+          </Button>
         </div>
       </Grid>
     </Container>

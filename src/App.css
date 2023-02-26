@@ -8,11 +8,10 @@ body {
     background-color: #f1f4f7 !important;
 }
 .App {
-    height: 100vh;
     margin: 0 auto;
-    max-height: 100vh;
+    min-height: 100vh;
 }
 .MuiContainer-root {
     background-color: #fff;
-    height: 100vh;
+    min-height: 100vh;
 }
