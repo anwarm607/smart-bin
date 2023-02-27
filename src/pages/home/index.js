@@ -3,8 +3,10 @@ import { Box } from "@mui/system";
 import RewardCard from "../../components/Reward Card";
 import rewards from "./rewards";
 import QrCodeScannerIcon from "@mui/icons-material/QrCodeScanner";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <Grid
       display="flex"
@@ -53,6 +55,7 @@ const Home = () => {
             style={{
               background: "#00676f",
             }}
+            onClick={() => navigate("/instruction")}
           >
             <QrCodeScannerIcon />
           </Fab>
