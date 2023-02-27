@@ -1,6 +1,6 @@
 import { Card, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { ReactComponent as Coin } from "../../assets/coin.svg";
+import Coin from "../../assets/coin.svg";
 import RupeeCoin from "../../assets/rupee.png";
 
 const RewardCard = (props) => {
@@ -18,9 +18,35 @@ const RewardCard = (props) => {
             display="flex"
           >
             {transactionType === "earn" ? (
-              <Coin width={54} height={54} />
+              <img
+                src={Coin}
+                width={54}
+                height={54}
+                alt="coin"
+                sx={{
+                  width: {
+                    sx: 44,
+                  },
+                  height: {
+                    sx: 44,
+                  },
+                }}
+              />
             ) : (
-              <img src={RupeeCoin} alt="rupee" width={54} height={54} />
+              <img
+                src={RupeeCoin}
+                alt="rupee"
+                width={54}
+                height={54}
+                sx={{
+                  width: {
+                    sx: 44,
+                  },
+                  height: {
+                    sx: 44,
+                  },
+                }}
+              />
             )}
           </Grid>
           <Grid item xs={10}>

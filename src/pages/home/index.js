@@ -1,4 +1,4 @@
-import { Container, Divider, Fab, Grid, Typography } from "@mui/material";
+import { Divider, Fab, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import RewardCard from "../../components/Reward Card";
 import rewards from "./rewards";
@@ -46,7 +46,7 @@ const Home = () => {
         ))}
       </Box>
       <Box position="relative">
-        <Box position="fixed" margin="0" bottom={10} right={4}>
+        <Box position="fixed" margin="0" bottom={10} right={9}>
           <Fab
             color="secondary"
             aria-label="edit"
